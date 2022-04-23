@@ -21,7 +21,7 @@ resource "helm_release" "helloiksapp" {
   name       = "helloiksapp"
   namespace        = "iks_app_namespace"
   create_namespace = true
-  chart = "https://github.com/alessandro-deprato/devnet_3034_app/blob/master/helloiks_adp-0.1.1.tgz?raw=true"
+  chart = "https://github.com/alessandro-deprato/devnet_3034_app/raw/master/helloiks_adp-0.1.1.tgz"
   set {
     name  = "MESSAGE"
     value = "Hello IKS from TFCB!!"
