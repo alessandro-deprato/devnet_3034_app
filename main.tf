@@ -19,7 +19,7 @@ provider "helm" {
 
 resource "helm_release" "helloiksapp" {
   name       = "helloiksapp"
-  namespace        = "iks-adp-namespace"
+  namespace        = "iks-adp-namespace-2"
   create_namespace = true
   chart = "https://github.com/alessandro-deprato/devnet_3034_app/raw/master/helloiks_adp-0.1.1.tgz"
   set {
