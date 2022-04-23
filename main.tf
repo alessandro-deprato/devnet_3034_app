@@ -19,7 +19,7 @@ provider "helm" {
 
 resource "helm_release" "helloiksapp" {
   name       = "helloiksapp"
-  namespace        = "iks_app_namespace"
+  namespace        = "iks-app-namespace"
   create_namespace = true
   chart = "https://github.com/GaetanoCarlucci/DEVNET-1291-APP/raw/main/helloiks-0.1.0.tgz"
   set {
