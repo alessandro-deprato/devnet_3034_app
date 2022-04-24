@@ -17,14 +17,14 @@ provider "helm" {
   }
 }
 
-#resource "helm_release" "helloiksapp" {
-#  name       = "helloiksapp"
-#  namespace        = "iks-adp-namespace"
-#  create_namespace = true
-#  chart = "https://github.com/alessandro-deprato/devnet_3034_app/raw/master/helloiks_adp-0.1.1.tgz"
-#  set {
-#    name  = "MESSAGE"
-#    value = "Hello IKS from TFCB!!"
-#  }
-#} 
+resource "helm_release" "helloiksapp" {
+  name       = "helloiksapp"
+  namespace        = "iks-adp-namespace"
+  create_namespace = true
+  chart = "https://github.com/alessandro-deprato/devnet_3034_app/raw/master/helloiks_adp-0.1.0.tgz"
+  set {
+    name  = "MESSAGE"
+    value = "Hello IKS from TFCB!!"
+  }
+} 
 
